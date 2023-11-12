@@ -30,7 +30,7 @@ const CountryAPP = () => {
     },[])
 
     const handleRemoveCountry = (name) => {
-const restCountry=filterCountries.filter((country) =>(country.name.common != name));
+const restCountry=filterCountries.filter((country) =>(country.name.common !== name));
         setFilterCountries (restCountry);
     }
 
